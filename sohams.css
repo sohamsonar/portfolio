@@ -1,10 +1,20 @@
 @charset "ISO-8859-1";
+*
+{
+	box-sizing:content;
+
+	
+}
 body {
   margin: 0;
   font-family: "Euclid Circular A", "Poppins";
   color: #ddfdfd;
   background: #050808;
+  padding:0;
+  
+  
 }
+
 .bar li
 {
 	
@@ -70,6 +80,20 @@ body {
   text-align: center;
   height: 100vh;
   background: #050808;
+  
+  animation-name:fadeIn;
+  animation-duration:5s;
+  
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .banner > .blob {
@@ -99,6 +123,7 @@ body {
 
 .waves > use {
   animation: move-forever 2s -2s linear infinite;
+  
 }
 
 .waves > use:nth-child(2) {
@@ -372,12 +397,195 @@ body.open .menu a {
   visibility: visible;
 }
 
+ .container1 {
+	 
+      display: flex;
+      width: 80%;
+      max-width: 800px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+      margin-left: 45%;
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	  margin-bottom:5%;
+    }
+.container1:nth-child(even) 
+{
+		
+      display: flex;
+      width: 80%;
+      max-width: 800px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+      margin-left: 5%;
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	  
+ 
+    }
+	 .container1:hover
+	 {
+		
+	 }
 
+    .container1 img{
+      width: 50%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px 0 0 10px;
+	  margin-right:5%;
+	  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	  
+    }
+	.container1 img:hover
+	{
+		  transform: rotate(0deg) translate(5%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+   margin-top: 0;
+     filter: grayscale(0%) contrast(100%);
+	   box-shadow:0 0 100px #03ffff ;
+	   
+		
+	}
+	
 
+    .text-container1 {
+      padding: 20px;
+      box-sizing: border-box;
+      width: 50%;
+    }
+	
 
-
-
-
+#projects 
+{
+	margin-top:5%;
+	
+}
+.contact
+{
+	padding:20px;
+}
+.main-footer
+{
+	padding:90px 0;
+	display:flex;
+	justify-content:space-evenly;
+	background-color:#050808;
+	
+}
+.main-footer ul
+{
+	list-style:none;
+}
+.main-footer h1
+{
+	font-size:22px;
+	line-height:117%;
+	color:#ffffff;
+	margin-bottom:10px;
+	font-weight:500;
+	
+}
+.main-footer h2
+{
+	color:#ffffff;
+	font-weight:500;
+}
+.main-footer ul li a
+{
+	color:#ffffffcc;
+	text-decoration:none;
+}
+footer
+{
+	background-color:#050808;
+	border-top:1px solid #1d2742;
+	font-size:17px;
+	padding:15px 5px;
+	color:#ffffff;
+	text-align:center;
+}
+footer a
+{
+	text-decoration:none;
+	color:#ffffff;
+}
+.logoinfo p
+{
+	color:#6EB981;
+	font-size:17px;
+	margin-top:5px;
+	
+}
+.contact-details
+{
+	margin-top:20px;
+}
+.contact-details li
+{
+	list-style:none;
+	margin:10px 0;
+	
+}
+.contact-details li a
+{
+	text-decoration:none;
+	color:#f1f1f1;
+}
+.contact-details .fa
+{
+	color:#f1f1f1;
+	margin-right:10px;
+	
+}
+.sociallogos
+{
+	padding:20px 0;
+}
+.sociallogos .logobox a
+{
+	padding:10px 50px;
+	text-decoration:none;
+	color:#ffffff;
+	font-size:22px;
+}
+.com ul li
+{
+	padding:5px 0;
+}
+.home
+{
+	padding-top:5%;
+	margin-left:50%;
+	margin-bottom:-2%;
+	
+	
+}
+.home img
+{
+	height:40px;
+	
+	  transition:5s;
+	  border-radius:8px;	
+}
+.home img:hover
+{
+	background:#03ffff;
+	box-shadow:0 0 5px #03ffff,0 0 25px #03ffff, 0 0 50px #03ffff, 0 0 200px #03ffff;
+	animation:home 1.75s linear;
+	
+	
+}
+@keyframes home
+{
+	to{
+		
+	}
+}
 
 
 
