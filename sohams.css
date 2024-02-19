@@ -14,6 +14,19 @@ body {
   
   
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
 
 .bar li
 {
@@ -119,7 +132,12 @@ body {
   .banner > img {
     width: 30vw;
   }
-
+.kam,
+#about,
+.banner {
+    height: auto;
+    padding: 10% 30%; /* Adjust as needed */
+}
 
 .waves > use {
   animation: move-forever 2s -2s linear infinite;
@@ -295,6 +313,13 @@ body .menu nav > a:hover {
   }
 }
 
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: flex; /* Show the menu for small screens */
+    }
+}
+
 body.open .menu a {
   opacity: 1;
   animation: appear 0.35s backwards;
@@ -396,7 +421,11 @@ body.open .menu a {
   opacity: 1;
   visibility: visible;
 }
-
+.container1 {
+    width: 90%; /* Adjust as needed */
+    max-width: 800px;
+    margin: 5% auto; /* Adjust as needed */
+}
  .container1 {
 	 
       display: flex;
