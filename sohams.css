@@ -22,11 +22,13 @@ body {
     font-size: 16px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 425px) {
     body {
-        font-size: 14px;
+        font-size: 0.2vh;
     }
+	
 }
+
 
 .bar li
 {
@@ -70,8 +72,7 @@ body {
 	height:16rem;
 	border-radius:	
 		42% 56% 72% 28% / 42% 42% 56% 48%;
-	background:#8f44fd
-	url("hey.jpg");
+	background:#8f44fd url("hey.jpg");
 	background-size:cover;
 	background-position:center;
 	animation:morph 3.75s linear infinite;
@@ -83,6 +84,17 @@ body {
 	
 	box-shadow:0 0 5px #03ffff , 0 0 25px #03ffff, 0 0 50px #03ffff,0 0 200px #03ffff;
 }
+@media only screen and (max-width: 400px) {
+    .blob {
+	overflow:hidden;
+	width:10rem;
+	height:10rem;
+        border-radius:	
+		22% 26% 52% 18% / 22% 22% 36% 28%;
+	
+    }
+	
+}
 .banner {
   display: flex;
   align-items: center;
@@ -93,7 +105,6 @@ body {
   text-align: center;
   height: 100vh;
   background: #050808;
-  
   animation-name:fadeIn;
   animation-duration:5s;
   
@@ -114,6 +125,16 @@ body {
   transition: 0.1s linear;
 }
 
+@media only screen and (max-width: 400px) {
+	.banner 
+	{
+		padding:50% 30%;
+	}
+	.banner > .blob {
+	width: 40vw;
+	
+}
+}
 .banner h2 {
   font-weight: 500;
   font-size: 30px;
@@ -169,6 +190,13 @@ svg {
   width: 100%;
   height: 30vw;
   max-height: 200px;
+}
+@media only screen and (max-width: 400px) {
+	svg
+	{
+		bottom:-20%;
+	}
+	
 }
 @keyframes morph
 {
@@ -256,7 +284,18 @@ body.open .background {
   align-items: flex-start;
   padding-left: 100px;
 }
-
+@media only screen and (max-width: 400px) {
+	.menu nav 
+	{
+		padding-left:20px;
+		
+	}
+	.menu nav a
+	{
+		font-size:25px;
+	}
+	
+}
 body.open .menu {
   opacity: 1;
   visibility: visible;
@@ -314,7 +353,7 @@ body .menu nav > a:hover {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
     .menu {
         display: flex; /* Show the menu for small screens */
     }
@@ -543,11 +582,26 @@ footer a
 	text-decoration:none;
 	color:#ffffff;
 }
+@media only screen and (max-width: 400px) {
+	footer
+	{
+		font-size:12px;
+	}
+	
+}
 .logoinfo p
 {
 	color:#6EB981;
 	font-size:17px;
 	margin-top:5px;
+	
+}
+@media only screen and (max-width: 400px) {
+	.logoinfo h2,h1,a
+	{
+		font-size:20px;
+		text-align:center;
+	}
 	
 }
 .contact-details
@@ -582,9 +636,23 @@ footer a
 	color:#ffffff;
 	font-size:22px;
 }
+@media only screen and (max-width: 400px) {
+	.sociallogos a
+	{
+		text-align:center;
+	}
+	
+}
 .com ul li
 {
 	padding:5px 0;
+}
+@media only screen and (max-width: 400px) {
+	.com ul li a
+	{
+		font-size:3vw;
+	}
+	
 }
 .home
 {
@@ -609,12 +677,7 @@ footer a
 	
 	
 }
-@keyframes home
-{
-	to{
-		
-	}
-}
+
 
 
 
