@@ -675,7 +675,17 @@ footer a
 	
 }
 
-
+@keyframes boxShadowAnimation {
+	0% {
+		box-shadow: 0 0 5px #03ffff, 0 0 25px #03ffff, 0 0 50px #03ffff, 0 0 200px #03ffff;
+	}
+	50% {
+		box-shadow: 0 0 10px #03ffff, 0 0 50px #03ffff, 0 0 100px #03ffff, 0 0 400px #03ffff;
+	}
+	100% {
+		box-shadow: 0 0 5px #03ffff, 0 0 25px #03ffff, 0 0 50px #03ffff, 0 0 200px #03ffff;
+	}
+}
 
 @media only screen and (max-width:600px)
 {
@@ -702,6 +712,24 @@ footer a
         align-items: baseline;
         flex-direction: row;
     }
+	
+
+.blob {
+	overflow: hidden;
+	width: 18rem;
+	height: 16rem;
+	border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+	background: #8f44fd url("hey.jpg");
+	background-size: cover;
+	background-position: center;
+	animation: morph 3.75s linear infinite, boxShadowAnimation 3s linear infinite;
+	transition-duration: 2s;
+}
+
+.blob:hover {
+	box-shadow: 0 0 5px #03ffff, 0 0 25px #03ffff, 0 0 50px #03ffff, 0 0 200px #03ffff;
+}
+
 }
 
 
