@@ -16,20 +16,33 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-	<meta name="viewport" content="width=600px, initial-scale=1.0">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sohams.css" />
 </head>
 <body>
+<!-- 
+	FOR A FULL DESKTOP PAGE
 
+height: 100vh;
+  background-color:#3498db;
+   background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  backdrop-filter: blur(10px);
+  -->
 <button class="burger" onclick="toggleMenu()"></button>
 
     <div class="background"></div>
     <div class="menu">
       <nav>
         <a href=""  style="animation-delay: 0.2s">About</a>
-        <a href="projects.html"  style="animation-delay: 0.3s">Projects</a>
+        <a href="projects.html"  style="animation-delay: 0.3s">Services</a>
         <a href="soham_resume.png"   style="animation-delay: 0.4s" download="resume">Resume</a>
-        <a href="contact.html" style="animation-delay: 0.5s">Contact/Feedback</a>
+        <a href="contact.html" style="animation-delay: 0.5s">Contact</a>
       </nav>
     </div>
     <script type="text/javascript">
@@ -39,14 +52,18 @@
 
 <section class="banner">
       <div class="blob"></div>
+
       <div class="banner-content">
-        <h2>Soham Sonar</h2>
+        <h1>Soham Sonar</h1>
         <p>
           a programming instructor who believes in making the intricate world of coding accessible and enjoyable for learners of all levels.
 
         </p>
+		
       </div>
+	 
     </section>
+	
 
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -89,8 +106,18 @@
         />
       </g>
     </svg>
-    
-
+	 <script>
+	 function Contact()
+	 {
+		window.location.href="contact.html";
+	 }
+	 </script>
+    <!-- Main section  -->
+	<section class="about_me" id="about_me">
+		<div>
+			
+		</div>
+	</section>
  
   <section id="footer">
 	<div class="main-footer">
@@ -100,36 +127,37 @@
 				<h1>Contact Us</h1>
 				<li>
 					<div class="fa fa-phone">
-					</div><a href="tel:+91">+91 9850224103</a>
+					</div><a href="tel:+91 9850224103">+91 9850224103</a>
 				</li>
 				<li>
 					<div class="fa fa-envelope">
 					</div><a href="mailto:sonarsoham88@gmail.com">sonarsoham88@gmail.com</a>
 				</li>
+				
+		
 			</div>
 		</div>
 
-	
+
 <div class="com" data-aos="fade-up">
 	<h1>About</h1>
 	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="index.html">About</a></li>
+		<li><a href="soham.html">Home</a></li>
+		<li><a href="#">About</a></li>
 		<li><a href="projects.html">Projects</a></li>
-		<li><a href="contact.html">Contact</a></li>
+		<li><a href="#footer">Contact</a></li>
 	</ul>
 
-</div>
-	
+</<div>
 <div class="info" data-aos="fade-up">
 	<h1>Social Media</h1>
-	<div class="sociallogos">
-		<div>
-		<i></i>
-		<a href="https://www.instagram.com/so_hham_24/" class="fa-brands fa-instagram"></a>
-		<a href="https://www.linkedin.com/in/soham-sonar-877b92230/" class="fa-brands fa-linkedin"></a>
-		<a href="#" class="fa-brands fa-github"></a>
-		</div>
+	 <div class="social-icon">
+    <a href="https://www.instagram.com/so_hham_24/" ><i class="fa-brands fa-instagram" ></i> </a>
+    <a href=" https://github.com/Pranit2386"><i class="fa-brands fa-github-alt"></i></a>
+    <a href="https://www.linkedin.com/in/soham-sonar-877b92230/" > <i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://wa.me/qr/GBSP6G6EJBJJP1"><i class="fa-brands fa-whatsapp" ></i></a>
+    
+    </div>
 	</div>
 </div>
 </div>
