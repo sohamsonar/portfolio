@@ -1,38 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-	<meta name="viewport" content="width=600px, initial-scale=1.0">
-</head>
+<title>Contact Us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+<meta name="viewport" content="width=600px, initial-scale=1.0">
 <style>
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;  /* centers horizontally */
-  align-items: center;      /* centers vertically */
-  font-family: "Euclid Circular A", "Poppins";
-  color: #ddfdfd;
-  background: #050808;
+ height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-family: "Euclid Circular A", "Poppins";
+    color: #ddfdfd;
+    background: #050808;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .subscribe {
+margin-top:100px;
   position: relative;
-  height: 140px;
+  height: 350px;
   width: 240px;
   padding: 20px;
   background-color: #FFF;
@@ -43,14 +37,14 @@ html, body {
 }
 .subscribe:hover {
   position: relative;
-  height: 140px;
+  height: 330px;
   width: 240px;
   padding: 20px;
   background-color: #FFF;
   border-radius: 4px;
   color: #333;
   box-shadow:0 0 5px #03ffff , 0 0 25px #03ffff, 0 0 50px #03ffff,0 0 200px #03ffff;
-
+	
 }
 .subscribe:after {
   position: absolute;
@@ -74,7 +68,6 @@ html, body {
 
 .subscribe input {
   position: absolute;
-  bottom: 30px;
   border: none;
   border-bottom: 1px solid #d4d4d4;
   padding: 10px;
@@ -87,6 +80,14 @@ html, body {
   outline: none;
   border-bottom: 1px solid #0d095e;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
+}
+
+#email-input {
+  bottom: 100px;
+}
+
+#feedback-input {
+  bottom: 50px;
 }
 
 .subscribe .submit-btn {
@@ -113,24 +114,12 @@ html, body {
   box-shadow: -5px 6px 20px 0px rgba(88, 88, 88, 0.569);
 }
 
-@media only screen and (max-width:600px)
-{
-
-.subscribe {
-  position: relative;
-  height: 180px;
-  width: 280px;
-  padding: 20px;
-  background-color: #FFF;
-  border-radius: 4px;
-  color: #333;
-  box-shadow: 0px 0px 60px 5px #80ffff;
-  transition:1.5s;
+@media only screen and (max-width:600px) {
+  .subscribe {
+    height: 350px;
+    width: 300px;
+  }
 }
-}
-
-
-
 
 button {
   border: 0;
@@ -201,17 +190,14 @@ body.open .background {
   padding-left: 100px;
 }
 @media only screen and (max-width: 400px) {
-	.menu nav 
-	{
-		padding-left:20px;
-		
-	}
-	.menu nav a
-	{
-		font-size:25px;
-	}
-	
+  .menu nav {
+    padding-left: 20px;
+  }
+  .menu nav a {
+    font-size: 25px;
+  }
 }
+
 body.open .menu {
   opacity: 1;
   visibility: visible;
@@ -268,40 +254,120 @@ body .menu nav > a:hover {
   }
 }
 
-
 @media only screen and (max-width: 425px) {
-    .menu {
-        display: flex; /* Show the menu for small screens */
-    }
+  .menu {
+    display: flex; /* Show the menu for small screens */
+  }
 }
 
 body.open .menu a {
   opacity: 1;
   animation: appear 0.35s backwards;
 }
+.btn
+{
+align-items:center;
+padding:10px;
+
+	border:1px solid white;
+	border-radius:25px;
+	background-color:#03ffff;
+	color:black;
+	opacity:0.8;
+}
+textarea
+{
+	height:50px;
+	width:100%;
+}
+
+.social-icon a
+{
+	display:inline-flex;
+	justify-content:center;
+	align-items:center;
+	width:2.3rem;
+	height:2.3rem;
+	background :transparent;
+	border:0.2rem solid #03ffff;
+	font-size:2rem;
+	border-radius:50%;
+	margin:0.6rem  1.5rem 3rem 1rem;
+	transition:0.3s ease;
+	color:#03ffff;
+}
+.social-icon a:hover
+{
+	color:white;
+	transform:scale(1.3)translateY(-5px);
+	background-color:#03ffff;
+	box-shadow:0 0 25px #03ffff;
+}
+h2,h3
+{
+	text-align:center;
+}
 </style>
+</head>
+
 <body>
 <button class="burger" onclick="toggleMenu()"></button>
 
-    <div class="background"></div>
-    <div class="menu">
-      <nav>
-        <a href="index.html"  style="animation-delay: 0.2s">Home</a>
-        <a href="projects.html"  style="animation-delay: 0.3s">Projects</a>
-        <a href="soham_resume.png"   style="animation-delay: 0.4s" download="resume">Resume</a>
-        <a style="animation-delay: 0.5s">Contact</a>
-      </nav>
-    </div>
-    <script type="text/javascript">
+<div class="background"></div>
+<div class="menu">
+  <nav>
+    <a href="soham.html" style="animation-delay: 0.2s">Home</a>
+    <a href="projects.html" style="animation-delay: 0.3s">Services</a>
+    <a href="soham_resume.png" style="animation-delay: 0.4s" download="resume">Resume</a>
+    <a href="contact.html" style="animation-delay: 0.5s">Contact</a>
+  </nav>
+  <script type="text/javascript">
       const toggleMenu = () => document.body.classList.toggle("open");
     </script>
-    </div>
-  <div class="subscribe">
+</div>
+
+<div class="subscribe">
     <p>FEEDBACK</p>
-    <input placeholder="Your FeedBack" class="subscribe-input" name="email" type="email">
-    <br>
-    <div class="submit-btn">SUBMIT</div>
-  </div>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<form action="https://api.web3forms.com/submit" method="POST">
+                    <div class="form-group">
+                        <input type="hidden" name="access_key" value="f0a1cb3e-8ac0-4138-98ec-657f99ef9baa">
+                        <div class="field">
+                            <input type="text" name="name" placeholder=" Full Name" required><br><br>
+                            
+                        </div>
+                        <div class="field">
+                            <input type="text" name="email" placeholder="Email" required><br><br>
+                             </div>
+                        <div class="field">
+                            <input type="text" name="phone" placeholder="phone" required><br><br>
+                            </div>
+                        <div class="message">
+                             <textarea name="message" placeholder="Message" required></textarea><br><br>
+                            </div>
+							 <div class="button-area">
+                        <button type="submit" class="btn">
+                            Submit <i class="fa fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    </div>
+                   
+                </form>
+</div>
+<h3>Or</h3>
+
+<div class="info" data-aos="fade-up">
+	<h2>Social Media</h2>
+	 <div class="social-icon">
+    <a href="https://www.instagram.com/pranit_2386/" ><i class="fa-brands fa-instagram" ></i> </a>
+    <a href=" https://github.com/Pranit2386"><i class="fa-brands fa-github-alt"></i></a>
+    <a href="mailto:khedekarpranit6@gmail.com" > <i class="fa-solid fa-envelope"></i></a>
+    <a href="https://wa.me/qr/GBSP6G6EJBJJP1"><i class="fa-brands fa-whatsapp" ></i></a>
+    
+    </div>
+	</div>
+
 
 </body>
 </html>
