@@ -680,33 +680,6 @@ box-shadow: 15px 13px 20px 20px rgba(0, 0, 0), 0px 2px 20px 0px #9f45b0;
 	padding:20px 0;
 }
 
-@media only screen and (max-width: 400px) {
-	.sociallogos a
-	{
-		text-align:center;
-	}
-	
-}
-.com ul li
-{
-	padding:5px 0;
-}
-@media only screen and (max-width: 320px) {
-	.com ul li a
-	{
-		font-size:2vw;
-	}
-	
-	
-  .middle h3
-{
-	margin-top:1rem;
-	text-align:center;
-	font-size:2rem;
-}
-  
-}
-
 .home
 {
 	padding-top:5%;
@@ -731,10 +704,243 @@ box-shadow: 15px 13px 20px 20px rgba(0, 0, 0), 0px 2px 20px 0px #9f45b0;
 	
 }
 
-
-
-@media only screen and (max-width:320px)
+@media only screen and (max-width: 400px) {
+	.sociallogos a
+	{
+		text-align:center;
+	}
+	
+}
+.com ul li
 {
+	padding:5px 0;
+}
+@media only screen and (max-width: 426px) {
+	.com ul li a
+	{
+		font-size:1rem;
+	}
+	.main-footer
+	{
+		padding: 90px 10px;
+		padding-bottom:0;
+		display: flex;
+		background-color: #050808;
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align:center;
+	} 
+
+	.banner h1
+	{
+		
+		font-weight: 500;
+	font-size: 2rem;
+	margin: 25% 0 10px;
+	}
+	.banner p
+	{
+		font-size:0.8rem;
+	}
+	.kam,
+	#about,
+	.banner
+	{
+		height: auto;
+		margin-top:25px;
+		padding: 50px 15%; /* Adjust as needed */
+	}
+	
+	.main-footer h2 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.contact-details li {
+    list-style: none;
+    margin: 10px 0;
+	font-size:10px;
+}
+.contact-details li a {
+    text-decoration: none;
+    color: #f1f1f1;
+	font-size:10px;
+}
+.com ul li a {
+    padding: 5px 0;
+	font-size:1rem;
+}
+.main-footer h1 {
+	padding:15px;
+    font-size: 1.5rem;
+    line-height: 117%;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+div.logoinfo
+{
+	font-size:1rem;
+}
+	
+	@keyframes boxShadowAnimation {
+	0% {
+		box-shadow: 0 0 5px #03ffff, 0 0 25px #03ffff, 0 0 50px #03ffff, 0 0 200px #03ffff;
+	}
+	50% {
+		box-shadow: 0 0 10px #03ffff, 0 0 50px #03ffff, 0 0 100px #03ffff, 0 0 400px #03ffff;
+	}
+	100% {
+		box-shadow: 0 0 5px #03ffff, 0 0 25px #03ffff, 0 0 50px #03ffff, 0 0 200px #03ffff;
+	}
+}
+.banner > .blob {
+    width: 45vw;
+    transition: 0.1s linear;
+}
+.blob {
+	margin-top:-10px;
+	overflow: hidden;
+	width: 2rem;
+	height: 10rem;
+	border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+	background: #8f44fd url("hey.jpg");
+	background-size: cover;
+	background-position: center;
+	animation: morph 3.75s linear infinite, boxShadowAnimation 3s linear infinite;
+	transition-duration: 2s;
+}
+
+.blob:hover {
+	box-shadow: 0 0 5px #03ffff, 0 0 25px #03ffff, 0 0 50px #03ffff, 0 0 200px #03ffff;
+}
+
+}
+/* Responsivness from here  */
+
+@media only screen and (max-width: 376px) {
+	.com ul li a
+	{
+		font-size:1rem;
+	}
+	.main-footer
+	{
+		padding: 0px 10px;
+		display: flex;
+		background-color: #050808;
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	} 
+	body
+	{
+		height:100vh;
+		width:100vw;
+	}
+	.banner h1
+	{
+		font-weight: 500;
+	font-size: 2rem;
+	margin: -60px 0 10px;
+	}
+	.banner p
+	{
+		font-size:0.8rem;
+	}
+	.kam,
+	#about,
+	.banner
+	{
+		height: auto;
+		margin-top:0px;
+		padding: 50% 15%; /* Adjust as needed */
+	}
+	
+	.main-footer h2 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 2rem;
+	
+}
+.contact-details li {
+    list-style: none;
+    margin: 10px 0;
+	font-size:10px;
+}
+.contact-details li a {
+    text-decoration: none;
+    color: #f1f1f1;
+	font-size:0.8rem;
+}
+.com ul li a {
+    padding: 5px 0;
+	font-size:1rem;
+}
+.main-footer h1 {
+	padding:10px;
+    font-size: 1.5rem;
+    line-height: 117%;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+div.logoinfo
+{
+	font-size:1rem;
+}
+	
+	@keyframes boxShadowAnimation {
+	0% {
+		box-shadow: 0 0 5px #03ffff, 0 0 25px #03ffff, 0 0 50px #03ffff, 0 0 200px #03ffff;
+	}
+	50% {
+		box-shadow: 0 0 10px #03ffff, 0 0 50px #03ffff, 0 0 100px #03ffff, 0 0 400px #03ffff;
+	}
+	100% {
+		box-shadow: 0 0 5px #03ffff, 0 0 25px #03ffff, 0 0 50px #03ffff, 0 0 200px #03ffff;
+	}
+}
+.banner > .blob {
+    width: 40vw;
+    transition: 0.1s linear;
+}
+.blob {
+	margin-top:-10px;
+	overflow: hidden;
+	width: 15vw;
+	height: 10rem;
+	border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+	background: #8f44fd url("hey.jpg");
+	background-size: cover;
+	background-position: center;
+	animation: morph 3.75s linear infinite, boxShadowAnimation 3s linear infinite;
+	transition-duration: 2s;
+}
+
+.blob:hover {
+	box-shadow: 0 0 5px #03ffff, 0 0 25px #03ffff, 0 0 50px #03ffff, 0 0 200px #03ffff;
+}
+
+}
+@media only screen and (width: 320px) {
+	.com ul li a
+	{
+		font-size:2vw;
+	}
+	.main-footer
+	{
+			padding: 90px 0;
+			display: flex;
+			background-color: #050808;
+			flex-wrap: wrap;
+			align-content: center;
+			align-items: baseline;
+			flex-direction: row;
+			margin-bottom:-90px;
+	}
 	body
 	{
 		height:100vh;
@@ -789,16 +995,7 @@ div.logoinfo
 {
 	font-size:1rem;
 }
-	.main-footer {
-        padding: 90px 0;
-        display: flex;
-        background-color: #050808;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: baseline;
-        flex-direction: row;
-		margin-bottom:-90px;
-    }
+	
 	@keyframes boxShadowAnimation {
 	0% {
 		box-shadow: 0 0 5px #03ffff, 0 0 25px #03ffff, 0 0 50px #03ffff, 0 0 200px #03ffff;
